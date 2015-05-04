@@ -1,0 +1,15 @@
+doctype
+html
+  include ./includes/head.jade
+  body
+    div#background-img
+    aside#header-nav
+      include ./includes/header.jade
+      include ./includes/nav.jade
+    main
+      h2#main-sub-title 
+        block subtitle
+      block content
+    footer
+      include ./includes/footer.jade
+    include ./includes/scripts.jade

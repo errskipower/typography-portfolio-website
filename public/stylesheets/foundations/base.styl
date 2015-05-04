@@ -1,0 +1,36 @@
+html
+  height 100%
+
+body
+  font-family base--font-body
+  font-size base--font-size
+  color base--font-color
+
+#background-img:before
+  content ""
+  position fixed
+  top 0
+  left 0
+  right 0
+  height 100%
+  z-index -1
+  background linear-gradient(rgba(color--primary, 0.3), rgba(color--primary, 0.3)), base--body-bg
+  background-position top
+  background-repeat no-repeat
+  background-attachment fixed
+  background-size cover
+  filter blur(3px)
+  
+a
+  color color--link 
+  text-decoration none
+  &:hover, &:active
+    color color--link-hover
+    text-decoration none
+    outline none
+  &:visited
+    color color--link
+    
+button
+  outline none
+    

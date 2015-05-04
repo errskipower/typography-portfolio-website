@@ -1,0 +1,19 @@
+nav
+  a(href="/", class=(active === 'home' ? 'current' : '')).nav-item
+    i.fa.fa-home 
+    span.nav-title Home
+  a(href="/portfolio", class=(active === 'portfolio' ? 'current' : '')).nav-item
+    i.fa.fa-folder
+    span.nav-title Portfolio
+  a(href="/services", class=(active === 'services' ? 'current' : '')).nav-item
+    i.fa.fa-laptop
+    span.nav-title Services
+  a(href="/about", class=(active === 'about' ? 'current' : '')).nav-item
+    i.fa.fa-user
+    span.nav-title About
+  a(href="/files/Roth-Emily-Resume.pdf", target="_blank", class=(active === 'resume' ? 'current' : '')).nav-item
+    i.fa.fa-file-text
+    span.nav-title.resume-link Resume
+  a(href="/contact", class=(active === 'contact' ? 'current' : '')).nav-item
+    i.fa.fa-send
+    span.nav-title Contact

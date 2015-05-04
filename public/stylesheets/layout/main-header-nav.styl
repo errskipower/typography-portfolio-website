@@ -1,0 +1,73 @@
+aside#header-nav
+  background color--nav
+  z-index 2
+  @media screen and (min-width: mq--desktop)
+    position fixed
+    width 15%
+    height 100%
+    left 0
+    top 0
+  h1
+    margin 0 0 8px
+    color color--white
+    font-weight normal
+    font-size .9em
+    padding 5px 10px 0
+    @media screen and (min-width: mq--desktop)
+      font-size 1.1em
+  nav
+    flex-display()
+    flex-direction row
+    padding-bottom 8px
+    @media screen and (min-width: mq--desktop)
+      flex-direction column
+    .nav-item
+      text-align center
+      margin auto
+      width 16.67% 
+      @media screen and (min-width: mq--desktop)
+        width 100%
+        z-index 10 
+        text-align left
+        background color--nav-item
+        margin 1px 0
+        padding 15px 0
+        &:hover
+          padding-left 5px
+          .resume-link:after
+            content: "\f0c1"
+            padding-left 8px
+            font-family FontAwesome
+            font-size 16px
+            color rgba(255,255,255,.5)
+      i.fa
+        padding 8px 9px
+        background darken(color--nav-item-active, 60%)
+        border-radius 50%
+        font-size 1em
+        @media screen and (min-width: mq--phablet)
+          padding 10px 11px
+          font-size 1.3em
+        @media screen and (min-width: mq--desktop)
+          display none
+      .nav-title
+        font-size .5em 
+        display block
+        margin-top 6px 
+        @media screen and (min-width: mq--phablet)
+          font-size .8em
+        @media screen and (min-width: mq--desktop)
+          font-size 1.1em
+          color color--white
+          padding-left 10px
+      &:active, &:hover
+        i.fa
+          color color--nav-item
+          background color--nav-item-active
+    .current
+      @media screen and (min-width: mq--desktop)
+        background color--nav-item-active
+        padding-left 5px
+      i.fa
+        color color--nav-item
+        background color--nav-item-active

@@ -1,0 +1,89 @@
+extend layout
+
+block subtitle
+  | Contact
+
+block content
+  section#contact
+    form#21984760256158.jotform-form(action='http://submit.jotform.us/submit/21984760256158/', method='post', name='form_21984760256158', accept-charset='utf-8')
+      input(type='hidden', name='formID', value='21984760256158')
+      |   
+      .form-all
+        ul.form-section.page-section
+          li#id_15.form-line.jf-required(data-type='control_fullname')
+            label#label_15.form-label.form-label-top.form-label-auto(for='input_15')
+              | Your Name
+              span.form-required
+                | *
+            |         
+            #cid_15.form-input-wide.jf-required
+              span.form-sub-label-container(style='vertical-align: top')
+                input#first_15.form-textbox(class='validate[required]', type='text', size='10', name='q15_yourName[first]', required)
+                |             
+                label#sublabel_first.form-sub-label(for='first_15', style='min-height: 13px;')  First Name 
+              |           
+              span.form-sub-label-container(style='vertical-align: top')
+                input#last_15.form-textbox(class='validate[required]', type='text', size='15', name='q15_yourName[last]', required)
+                |             
+                label#sublabel_last.form-sub-label(for='last_15', style='min-height: 13px;')  Last Name 
+          |       
+          li#id_16.form-line.jf-required(data-type='control_email')
+            label#label_16.form-label.form-label-top.form-label-auto(for='input_16')
+              | Your E-mail Address
+              span.form-required
+                | *
+            |         
+            #cid_16.form-input-wide.jf-required
+              input#input_16.form-textbox(type='email', class='validate[required, Email]', name='q16_yourEmail16', size='32', value='', required)
+          |       
+          li#id_18.form-line(data-type='control_textbox')
+            label#label_18.form-label.form-label-top.form-label-auto(for='input_18')  Subject 
+            |         
+            #cid_18.form-input-wide.jf-required
+              input#input_18.form-textbox(type='text', data-type='input-textbox', name='q18_subject', size='40', value='')
+          |       
+          li#id_17.form-line.jf-required(data-type='control_textarea')
+            label#label_17.form-label.form-label-top.form-label-auto(for='input_17')
+              | Message
+              span.form-required
+                | *
+            |         
+            #cid_17.form-input-wide.jf-required
+              textarea#input_17.form-textarea(class='validate[required]', name='q17_yourMessage', cols='60', rows='9', required)
+          |       
+          li#id_14.form-line(data-type='control_button')
+            #cid_14.form-input-wide
+              .form-buttons-wrapper(style='margin-left:156px')
+                button#input_14.form-submit-button(type='submit')
+                  | Submit
+                |             &nbsp;
+                |             
+                button#input_reset_14.form-submit-reset(type='reset')
+                  | Clear Form
+          |       
+          li(style='display:none')
+            | Should be Empty:
+            input(type='text', name='website', value='')
+      |   
+      input#simple_spc(type='hidden', name='simple_spc', value='21984760256158')
+      |   
+      script(type='text/javascript').
+        document.getElementById("si" + "mple" + "_spc").value = "21984760256158-21984760256158";
+
+  section#business-card
+    p
+      span.logo-title emily@roth:~$
+      | Portfolio
+      a(href="www.emroth.com") www.emroth.com
+    p
+      span.logo-title emily@roth:~$
+      | Email
+      a(href="mailto:rothe2@rpi.edu") rothe2@rpi.edu
+    p
+      span.logo-title emily@roth:~$
+      | Call
+      a(href="tel:2016699695") 201.669.9695
+    p
+      span.logo-title emily@roth:~$
+      | Hire
+

@@ -1,0 +1,72 @@
+//
+// MIXINS
+// ========
+//
+// Template from: https://github.com/jackbrewer/stylus-boilerplate
+//
+// Project specific mixins and functions for any styles you find yourself
+// having to use multiple times within your project.
+//
+// Should you find yourself using the same mixins or fuctions across multiple
+// projects consider adding them to https://github.com/jackbrewer/stylus-mixins.
+//
+
+
+text-stroke()
+  -webkit-text-stroke arguments 
+
+flex-display()
+  display -webkit-box  // OLD - iOS 6-, Safari
+  display -moz-box     // OLD - Firefox 19-
+  display -ms-flexbox  // TWEENER - IE 10
+  display -webkit-flex // NEW - Chrome prefixed
+  display flex;        // NEW - Proper Spec
+ 
+flex-grow()
+  flex-grow arguments
+  -webkit-flex-grow arguments
+  
+flex-direction()
+  flex-direction arguments
+  -webkit-flex-direction arguments
+  -ms-flex-direction arguments
+ 
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+box-shadow()
+  -webkit-box-shadow arguments
+  box-shadow arguments 
+
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+transform()
+  -webkit-transform arguments
+  -moz-transform arguments
+  -ms-transform arguments
+  -o-transform arguments
+  transform arguments
+  
+filter()
+  -webkit-filter arguments
+  -moz-filter arguments
+  -o-filter arguments
+  -ms-filter arguments
+  filter arguments
+
+//word-break()
+//  word-break arguments
+//  -ms-word-break arguments
+  
+//hyphens()
+//  -webkit-hyphens arguments
+//  -moz-hyphens arguments
+//  -ms-hyphens arguments
+//  hyphens arguments
